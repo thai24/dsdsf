@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/orderPage.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="../images/logo.jfif" alt="error" /></a>
+      </div>
+      <nav>
+        <ul class="nav1">
+          <li class="menu">
+            <a href=""><i class="fa-solid fa-heart"></i>yeu thich</a>
+          </li>
+          <li class="menu">
+            <a href=""><i class="fa-solid fa-user"></i>tai khoan</a>
+          </li>
+          <li id="menu" class="menu">
+            <a href=""><i class="fa-solid fa-bars"></i>menu</a>
+            <ul class="nav2">
+              <li><a href="">xem gan day</a></li>
+              <li><a href="">ho tro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="order">
+        <div class="order_left">
+          <div class="order_left_boxone">
+            <h3>Khách sạn: <span>Khách sạn Song Anh</span></h3>
+            <p>36 Nguyễn Thái Bình, Quận Tân Bình, TP. Hồ Chí Minh, Việt Nam</p>
+            <div>
+              <p><span>6.0</span> Dễ chịu</p>
+              <p>6 đánh giá</p>
+            </div>
+            <section>
+              <p>WiFi miễn phí</p>
+              <p>Xe đưa đón sân bay</p>
+              <p>Chỗ đỗ xe</p>
+            </section>
+          </div>
+          <div class="order_left_boxtwo">
+            <h3>Chi tiết đặt phòng của bạn</h3>
+            <div class="order_left_boxtwo_time">
+              <div>
+                <h5>Nhận phòng</h5>
+                <p>T4, 23 tháng 10 2024</p>
+                <p>11:30 – 12:00</p>
+              </div>
+              <div>
+                <h5>Trả phòng</h5>
+                <p>T4, 24 tháng 10 2024</p>
+                <p>11:30 – 12:00</p>
+              </div>
+            </div>
+            <h5 class="order_left_boxtwo_text">
+              Tổng thời gian lưu trú: <span>1 đêm</span>
+            </h5>
+            <div class="order_left_boxtwo_room">
+              <h5>Bạn đã chọn :</h5>
+              <p>1: Phòng Giường Đôi</p>
+              <p>1 :Phòng Giường Đơn</p>
+            </div>
+          </div>
+          <div class="order_left_boxthree">
+            <h3>Tổng giá phòng: <span>VND 356.000</span></h3>
+            <section>
+              <p>Mã khuyến mãi(nếu có):</p>
+              <div>
+                <input type="text" placeholder="vui lòng nhập vào đây" />
+                <button>xác nhận</button>
+              </div>
+            </section>
+            <h2>Tổng cộng: <span>VND 356.000</span></h2>
+          </div>
+          <div class="order_left_boxfour">
+            <div>
+              <h3>Lịch thanh toán của bạn</h3>
+              <p>Không cần thanh toán hôm nay. Bạn sẽ trả khi đến nghỉ.</p>
+            </div>
+            <hr />
+            <div>
+              <h3>Chi phí hủy là bao nhiêu?</h3>
+              <p>VND 356.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="order_right">
+          <div class="order_right_boxone">
+            <p>
+              <i class="fa-regular fa-user"></i><a href="">Đăng nhập</a> để đặt
+              phòng với thông tin đã lưu của bạn hoặc <a href="">đăng ký</a> để
+              quản lý các đặt phòng của bạn mọi lúc mọi nơi!
+            </p>
+          </div>
+          <div class="order_right_boxtwo">
+            <h3>Nhập thông tin chi tiết của bạn</h3>
+            <div class="order_right_boxtwo_before">
+              <p>
+                <i class="fa-solid fa-exclamation"></i>Gần xong rồi! Chỉ cần
+                điền phần thông tin <span>*</span> bắt buộc Vui lòng điền thông
+                tin bằng Tiếng Việt hoặc Tiếng Anh
+              </p>
+            </div>
+            <div class="order_right_boxtwo_under">
+              <section>
+                <label for="">Họ <span>*</span></label>
+                <input type="text" />
+              </section>
+              <section>
+                <label for=""> Tên <span>*</span></label>
+                <input type="text" />
+              </section>
+              <section>
+                <label for="">Địa chỉ email <span>*</span></label>
+                <input type="text" placeholder="Chú ý tránh lỗi chính tả" />
+              </section>
+              <section>
+                <label for=""
+                  >Điện thoại (ưu tiên số ĐTDĐ) <span>*</span></label
+                >
+                <input type="text" />
+              </section>
+              <hr />
+              <div>
+                <h5>Bạn đặt phòng cho ai?</h5>
+                <input type="radio" name="1" id="1" />Tôi là khách lưu trú chính
+                <br />
+                <input type="radio" name="2" id="2" />Đặt phòng này là cho người
+                khác
+                <h5>Bạn sắp đi công tác?</h5>
+                <input type="radio" name="1" id="1" />Đúng
+                <input type="radio" name="2" id="2" />Sai
+              </div>
+            </div>
+          </div>
+          <div class="order_right_boxthree">
+            <h3>Thêm vào kỳ nghỉ</h3>
+            <div class="order_right_boxthree_content">
+              <div>
+                <section>
+                  <button></button>
+                  <h5>
+                    Tôi muốn đặt xe đưa đón sân bay
+                    <span>miễn phí</span>
+                    <p>
+                      Chúng tôi sẽ cho chỗ nghỉ biết bạn quan tâm đến dịch vụ
+                      này để họ có thể cung cấp thêm chi tiết cho bạn.
+                    </p>
+                  </h5>
+                </section>
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <div>
+                <section>
+                  <button></button>
+                  <h5>
+                    Tôi muốn thuê xe với ưu đãi 10%
+                    <p>
+                      Tiết kiệm 10% cho tất cả xe thuê khi bạn đặt với chúng
+                      tôi. Chúng tôi sẽ thêm các lựa chọn thuê xe vào xác nhận
+                      đặt phòng của bạn.
+                    </p>
+                  </h5>
+                </section>
+                <i class="fa-solid fa-car"></i>
+              </div>
+              <div>
+                <section>
+                  <button></button>
+                  <h5>
+                    Bạn muốn đặt trước taxi hoặc xe đưa đón?
+                    <p>
+                      Hãy tránh những điều bất ngờ - đi từ sân bay đến chỗ nghỉ
+                      một cách thuận lợi. Chúng tôi sẽ thêm lựa chọn taxi vào
+                      xác nhận đặt phòng của bạn.
+                    </p>
+                  </h5>
+                </section>
+                <i class="fa-solid fa-taxi"></i>
+              </div>
+            </div>
+          </div>
+          <div class="order_right_boxfour">
+            <h3><a href="">Tiếp theo: Chi tiết cuối cùng</a> <i class="fa-solid fa-chevron-right"></i></h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_above">
+        <img src="../images/logo.jfif" alt="" />
+        <div>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="footer_under">
+        <div>
+          <p>Công ty</p>
+          <p>Cơ hội việc làm</p>
+          <p>Báo chí</p>
+          <p>Ứng dụng di động - tìm kiếm mọi lúc, mọi nơi</p>
+        </div>
+        <div>
+          <p>Hỗ trợ</p>
+          <p>Cách trivago hoạt động</p>
+          <p>Điều khoản sử dụng</p>
+          <p>Thông tin Pháp lý</p>
+          <p>Tùy chọn cookie</p>
+          <p>Thông báo bảo mật</p>
+        </div>
+        <div>
+          <h3>
+            Tìm nguồn cảm hứng đặc biệt cho kỳ nghỉ tiếp theo của bạn - đăng ký
+            nhận bản tin của chúng tôi.
+          </h3>
+          <form action="">
+            <input type="text" placeholder="Địa chỉ email" />
+            <button type="button">Dang ky</button>
+          </form>
+          <p class="footer_under_text">
+            trivago N.V., Kesselstraße 5 – 7, 40221 Düsseldorf, CHLB Đức
+            Copyright 2024 trivago | Bảo lưu toàn quyền.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

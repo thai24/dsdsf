@@ -1,0 +1,23 @@
+.seting {
+  width: 80%;
+}
+.seting h2 {
+  margin-bottom: var(--abs-12);
+  font-size: var(--font-size-20);
+}
+.seting div {
+  margin-top: var(--abs-12);
+  font-size: var(--font-size-12);
+}
+.seting div section {
+  display: flex;
+  align-items: center;
+  gap: var(--abs-12);
+}
+.seting div section select{
+    padding: var(--abs-4);
+    font-size: var(--abs-12);
+}
+.seting button{
+    padding: var(--abs-8);
+}

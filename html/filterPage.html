@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/filterPage.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="../images/logo.jfif" alt="error" /></a>
+      </div>
+      <nav>
+        <ul class="nav1">
+          <li class="menu">
+            <a href=""><i class="fa-solid fa-heart"></i>yeu thich</a>
+          </li>
+          <li class="menu">
+            <a href=""><i class="fa-solid fa-user"></i>tai khoan</a>
+          </li>
+          <li id="menu" class="menu">
+            <a href=""><i class="fa-solid fa-bars"></i>menu</a>
+            <ul class="nav2">
+              <li><a href="">xem gan day</a></li>
+              <li><a href="">ho tro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <div class="filterPage_block_one">
+        <form class="home_block_one_form" action="">
+          <div class="home_block_one_form_act">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="home_block_one_form_act_text" id="home_act1">
+              <label for="">khach san</label>
+              <input type="text" placeholder="ban muon di dau?" />
+            </div>
+          </div>
+          <div class="home_block_one_form_act" id="home_act2">
+            <div class="home_block_one_form_act">
+              <i class="fa-solid fa-calendar-days"></i>
+              <div class="home_block_one_form_act_text">
+                <label for="nhanphong">nhan phong</label>
+                <input id="nhanphong" type="date" />
+              </div>
+            </div>
+            <div class="home_block_one_form_act_text">
+              <label for="traphong">tra phong</label>
+              <input id="traphong" type="date" />
+            </div>
+          </div>
+          <div class="home_block_one_form_act" id="home_act3">
+            <i class="fa-solid fa-person"></i>
+            <div
+              class="home_block_one_form_act_text"
+              onclick="handle_box_quantity()"
+            >
+              <label>so khach va phong</label>
+              <p id="display_box_quantity">1 khach va 1 phong</p>
+            </div>
+            <div class="home_act_quantity" id="box_quantity">
+              <div class="home_act_quantity_box">
+                <p>so khach</p>
+                <div class="home_act_quantity_input">
+                  <button type="button" onclick="handle_subtraction_preson()">
+                    -
+                  </button>
+                  <input id="quantity_preson" type="number" value="1" min="1" />
+                  <button type="button" onclick="handle_addition_preson()">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="home_act_quantity_box">
+                <p>so phong</p>
+                <div class="home_act_quantity_input">
+                  <button type="button" onclick="handle_subtraction_room()">
+                    -
+                  </button>
+                  <input id="quantity_room" type="number" value="1" min="1" />
+                  <button type="button" onclick="handle_addition_room()">
+                    +
+                  </button>
+                </div>
+              </div>
+              <button
+                type="button"
+                onclick="handle_act_box_quantity()"
+                class="home_act_quantity_btn"
+              >
+                ap dung
+              </button>
+            </div>
+          </div>
+          <button id="home_act4" type="submit">Tim</button>
+        </form>
+        <div class="filterPage_block_one_fiter">
+          <div class="filterPage_block_one_fiter_act">
+            <h5>gia:</h5>
+            <p onclick="changeFiter(0)">
+              chon <i class="fa-solid fa-plus"></i>
+            </p>
+            <div class="filterPage_block_one_fiter_act_hiden">
+              <h5>Đặt khoảng giá</h5>
+              <div>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+              </div>
+              <button>ap dung</button>
+            </div>
+          </div>
+          <div class="filterPage_block_one_fiter_act">
+            <h5>danh gia:</h5>
+            <p onclick="changeFiter(1)">
+              chon <i class="fa-solid fa-plus"></i>
+            </p>
+            <div class="filterPage_block_one_fiter_act_hiden">
+              <h5>Đặt khoảng giá</h5>
+              <div>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+              </div>
+              <button>ap dung</button>
+            </div>
+          </div>
+          <div class="filterPage_block_one_fiter_act">
+            <h5>vi tri:</h5>
+            <p onclick="changeFiter(2)">
+              chon <i class="fa-solid fa-plus"></i>
+            </p>
+            <div class="filterPage_block_one_fiter_act_hiden">
+              <h5>Đặt khoảng giá</h5>
+              <div>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+                <section>
+                  <span></span>
+                  <h4>100-200</h4>
+                </section>
+              </div>
+              <button>ap dung</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filterPage_block_two">
+        <div class="filterPage_block_two_filter">
+          <h5>Sắp xếp theo:</h5>
+          <select name="" id="">
+            <option value="">Gợi ý của chúng tôi</option>
+            <option value="">xếp hạng và gợi ý</option>
+            <option value="">giá và gợi ý</option>
+            <option value="">khoảng cách và gợi ý</option>
+          </select>
+          <section>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>
+              Kết quả xếp hạng phản ánh tiêu chí tìm kiếm của bạn và đánh giá
+              của chúng tôi về độ hấp dẫn của ưu đãi so với các ưu đãi khác trên
+              trang
+            </p>
+          </section>
+        </div>
+        <div class="filterPage_block_two_list">
+          <div class="filterPage_block_two_list_item">
+            <img src="../images/hotel.jpg" alt="" />
+            <div class="filterPage_block_two_list_item_desc">
+              <div>
+                <h3>Khách sạn Song Anh</h3>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5>khách sạn 2 sao</h5>
+              <h5>Quận 1, TP. Hồ Chí Minh</h5>
+              <h5><span>5.8 - Tốt </span>(20 đánh giá)</h5>
+            </div>
+            <div class="filterPage_block_two_list_item_cost">
+              <h5>Chọn ngày để xem giá chính xác</h5>
+              <p><span>VND 1.121.000</span></p>
+              <p>VND 1.100.000</p>
+              <button>
+                Xem cho trong <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="filterPage_block_two_list_item">
+            <img src="../images/hotel.jpg" alt="" />
+            <div class="filterPage_block_two_list_item_desc">
+              <div>
+                <h3>Khách sạn Song Anh</h3>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5>khách sạn 2 sao</h5>
+              <h5>Quận 1, TP. Hồ Chí Minh</h5>
+              <h5><span>5.8 - Tốt </span>(20 đánh giá)</h5>
+            </div>
+            <div class="filterPage_block_two_list_item_cost">
+              <h5>Chọn ngày để xem giá chính xác</h5>
+              <p><span>VND 1.121.000</span></p>
+              <p>VND 1.100.000</p>
+              <button>
+                Xem cho trong <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="filterPage_block_two_list_item">
+            <img src="../images/hotel.jpg" alt="" />
+            <div class="filterPage_block_two_list_item_desc">
+              <div>
+                <h3>Khách sạn Song Anh</h3>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5>khách sạn 2 sao</h5>
+              <h5>Quận 1, TP. Hồ Chí Minh</h5>
+              <h5><span>5.8 - Tốt </span>(20 đánh giá)</h5>
+            </div>
+            <div class="filterPage_block_two_list_item_cost">
+              <h5>Chọn ngày để xem giá chính xác</h5>
+              <p><span>VND 1.121.000</span></p>
+              <p>VND 1.100.000</p>
+              <button>
+                Xem cho trong <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="filterPage_block_two_list_item">
+            <img src="../images/hotel.jpg" alt="" />
+            <div class="filterPage_block_two_list_item_desc">
+              <div>
+                <h3>Khách sạn Song Anh wrrrrtfsddddddddddddddddddddddddd</h3>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5>khách sạn 2 sao</h5>
+              <h5>Quận 1, TP. Hồ Chí Minh</h5>
+              <h5><span>5.8 - Tốt </span>(20 đánh giá)</h5>
+            </div>
+            <div class="filterPage_block_two_list_item_cost">
+              <h5>Chọn ngày để xem giá chính xác</h5>
+              <p><span>VND 1.121.000</span></p>
+              <p>VND 1.100.000</p>
+              <button>
+                Xem cho trong <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="filterPage_block_two_list_item">
+            <img src="../images/hotel.jpg" alt="" />
+            <div class="filterPage_block_two_list_item_desc">
+              <div>
+                <h3>Khách sạn Song Anh sdaaasdaaa</h3>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h5>khách sạn 2 sao</h5>
+              <h5>Quận 1, TP. Hồ Chí Minh</h5>
+              <h5><span>5.8 - Tốt </span>(20 đánh giá)</h5>
+            </div>
+            <div class="filterPage_block_two_list_item_cost">
+              <h5>Chọn ngày để xem giá chính xác</h5>
+              <p><span>VND 1.121.000</span></p>
+              <p>VND 1.100.000</p>
+              <button>
+                Xem cho trong <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="filterPage_block_two_message">
+          <i class="fa-regular fa-bell"></i>
+          <p>
+            Giá và lượng phòng chúng tôi nhận từ các trang đặt phòng thay đổi
+            liên tục. Có nghĩa là không phải lúc nào bạn cũng tìm được chính xác
+            ưu đãi bạn nhìn thấy trên trivago khi vào trang đặt phòng.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_above">
+        <img src="../images/logo.jfif" alt="" />
+        <div>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="footer_under">
+        <div>
+          <p>Công ty</p>
+          <p>Cơ hội việc làm</p>
+          <p>Báo chí</p>
+          <p>Ứng dụng di động - tìm kiếm mọi lúc, mọi nơi</p>
+        </div>
+        <div>
+          <p>Hỗ trợ</p>
+          <p>Cách trivago hoạt động</p>
+          <p>Điều khoản sử dụng</p>
+          <p>Thông tin Pháp lý</p>
+          <p>Tùy chọn cookie</p>
+          <p>Thông báo bảo mật</p>
+        </div>
+        <div>
+          <h3>
+            Tìm nguồn cảm hứng đặc biệt cho kỳ nghỉ tiếp theo của bạn - đăng ký
+            nhận bản tin của chúng tôi.
+          </h3>
+          <form action="">
+            <input type="text" placeholder="Địa chỉ email" />
+            <button type="button">Dang ky</button>
+          </form>
+          <p class="footer_under_text">
+            trivago N.V., Kesselstraße 5 – 7, 40221 Düsseldorf, CHLB Đức
+            Copyright 2024 trivago | Bảo lưu toàn quyền.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

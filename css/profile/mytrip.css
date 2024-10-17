@@ -1,0 +1,27 @@
+.nomytrip,
+.mytrip {
+  width: 80%;
+}
+.mytrip h2 {
+  margin-bottom: var(--abs-12);
+  font-size: var(--font-size-20);
+}
+
+.nomytrip div {
+  text-align: center;
+}
+
+.nomytrip img {
+  width: 30%;
+  height: var(--abs-116);
+  object-fit: cover;
+  border-radius: var(--abs-12);
+}
+.nomytrip p {
+  width: 60%;
+  margin: auto;
+}
+.nomytrip a {
+    font-weight: 500;
+    color: var(--blue-800);
+}

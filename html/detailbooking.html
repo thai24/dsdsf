@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/detailbooking.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="../images/logo.jfif" alt="error" /></a>
+      </div>
+      <nav>
+        <ul class="nav1">
+          <li class="menu">
+            <a href=""><i class="fa-solid fa-heart"></i>yeu thich</a>
+          </li>
+          <li class="menu">
+            <a href=""><i class="fa-solid fa-user"></i>tai khoan</a>
+          </li>
+          <li id="menu" class="menu">
+            <a href=""><i class="fa-solid fa-bars"></i>menu</a>
+            <ul class="nav2">
+              <li><a href="">xem gan day</a></li>
+              <li><a href="">ho tro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <div class="detail_link">
+        <a href="">Trang chu <i class="fa-solid fa-chevron-right"></i></a>
+        <a href="">khach san<i class="fa-solid fa-chevron-right"></i></a>
+        <a href="">TP.ho chi minh<i class="fa-solid fa-chevron-right"></i></a>
+        <p>Khách sạn Song Anh</p>
+      </div>
+      <div class="detail_block">
+        <div class="detail_block_one">
+          <a href="#detail_block_two">tong quan</a>
+          <a href="#detail_block_five">thong tin gia</a>
+          <a href="#detail_block_four">tien ich</a>
+          <a href="#detail_block_seven">danh gia cua khach(6)</a>
+        </div>
+        <div class="detail_block_two" id="detail_block_two">
+          <div>
+            <h3>Khách sạn Song Anh</h3>
+            <section>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>
+                36 Nguyễn Thái Bình, Quận Tân Bình, TP. Hồ Chí Minh, Việt Nam
+              </p>
+            </section>
+          </div>
+          <div>
+            <i class="fa-regular fa-heart"></i>
+            <a href="#detail_block_five">Xem phòng trống</a>
+          </div>
+        </div>
+        <div class="detail_block_three">
+          <div class="detail_block_three_display">
+            <img id="mainImage" src="../images/hotel1.jpg" alt="" />
+          </div>
+          <div class="detail_block_three_small">
+            <img
+              src="../images/hotel2.jpg"
+              alt=""
+              onclick="changeImagee(this)"
+            />
+            <img
+              src="../images/hotel3.jpg"
+              alt=""
+              onclick="changeImagee(this)"
+            />
+            <img
+              src="../images/hotel4.jpg"
+              alt=""
+              onclick="changeImagee(this)"
+            />
+            <img
+              src="../images/hotel5.jpg"
+              alt=""
+              onclick="changeImagee(this)"
+            />
+            <img
+              src="../images/hotel.jpg"
+              alt=""
+              onclick="changeImagee(this)"
+            />
+          </div>
+        </div>
+        <div class="detail_block_four" id="detail_block_four">
+          <div class="detail_block_four_desc">
+            <p>
+              Nằm ở TP. Hồ Chí Minh, cách Chùa Giác Lâm 2.9 km, Khách sạn Song
+              Anh cung cấp chỗ nghỉ có Wi-Fi miễn phí và chỗ đậu xe riêng miễn
+              phí. Chỗ nghỉ cách Chợ Tân Định khoảng 4.3 km, Công viên văn hóa
+              Đầm Sen 4.4 km và Bảo tàng chứng tích chiến tranh 5.2 km. Chỗ nghỉ
+              này cung cấp dịch vụ phòng, quầy lễ tân 24 giờ và phòng giữ hành
+              lý cho khách. Tại khách sạn, mỗi phòng đều được thiết kế có ban
+              công. Tại Khách sạn Song Anh, các phòng đều có điều hòa và TV màn
+              hình phẳng.Chỗ nghỉ cách Dinh Thống Nhất 5.6 km và Trung Tâm
+              Thương Mại Diamond Plaza 5.9 km. Sân bay gần nhất là Sân bay Quốc
+              tế Tân Sơn Nhất, cách Khách sạn Song Anh 2 km.
+            </p>
+            <h3>Các tiện nghi được ưa chuộng nhất</h3>
+            <section>
+              <p>Dịch vụ đưa đón sân bay (miễn phí)</p>
+              <p>Phòng không hút thuốc</p>
+              <p>Dịch vụ phòng</p>
+              <p>Chỗ đỗ xe miễn phí</p>
+              <p>WiFi miễn phí</p>
+              <p>Thang máy</p>
+              <p>Giặt ủi</p>
+            </section>
+          </div>
+          <div class="detail_block_four_utilities">
+            <h3>Điểm nổi bật của chỗ nghỉ</h3>
+            <h4>Hoàn hảo cho kỳ nghỉ 1 đêm!</h4>
+            <section>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Địa điểm hàng đầu: Được khách gần đây đánh giá cao (8,8 điểm)
+              </p>
+              <p>
+                <i class="fa-solid fa-car-side"></i>
+                Có chỗ đậu xe riêng MIỄN PHÍ!
+              </p>
+            </section>
+          </div>
+        </div>
+        <div class="detail_block_five" id="detail_block_five">
+          <h3>Phòng trống</h3>
+          <div>
+            <section>
+              <label for="">Ngày đặt phòng: </label
+              ><input type="date" name="" id="" />
+            </section>
+            <section>
+              <label for="">Ngày trả phòng: </label
+              ><input type="date" name="" id="" />
+            </section>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Loại chỗ nghỉ</th>
+                <th>Số lượng khách</th>
+                <th>Giá hôm nay</th>
+                <th>Còn trống</th>
+                <th>Chọn phòng</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h4>Phòng Giường Đôi</h4>
+                  <p>1 giường đôi lớn</p>
+                  <p>20 m²</p>
+                  <p>Ban công</p>
+                  <p>Tầm nhìn ra khung cảnh</p>
+                  <p>Điều hòa không khí</p>
+                  <p>TV màn hình phẳng</p>
+                </td>
+                <td>2</td>
+                <td>
+                  <h5>VND <span class="priceRoom">100</span>.000</h5>
+                </td>
+                <td>10</td>
+                <td>
+                  <input
+                    class="changeQuantityRoom"
+                    type="number"
+                    value="2"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+                <td rowspan="2">
+                  <h4><span id="quantityRoom"></span> phòng giá:</h4>
+                  <h5>VND <span id="totalPrice"></span>.000</h5>
+                  <button>Tôi muốn đặt</button>
+                  <p>Đã bao gồm thuế và phí</p>
+                  <p>Xác nhận tức thời</p>
+                  <p>thanh toán trước</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h4>Phòng Giường Đôi</h4>
+                  <p>1 giường đôi lớn</p>
+                  <p>20 m²</p>
+                  <p>Ban công</p>
+                  <p>Tầm nhìn ra khung cảnh</p>
+                  <p>Điều hòa không khí</p>
+                  <p>TV màn hình phẳng</p>
+                </td>
+                <td>4</td>
+                <td>
+                  <h5>VND <span class="priceRoom">366</span>.000</h5>
+                </td>
+                <td>10</td>
+                <td>
+                  <input
+                    class="changeQuantityRoom"
+                    type="number"
+                    value="0"
+                    min="0"
+                    max="10"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="detail_block_six">
+          <h3>Biện pháp tại chỗ nghỉ</h3>
+          <p>
+            Chỗ nghỉ này cho biết họ đã áp dụng các biện pháp cụ thể ở một số
+            hoặc tất cả các hạng mục này: rác thải, nước, năng lượng và khí nhà
+            kính, điểm đến và cộng đồng, cũng như môi trường tự nhiên.
+          </p>
+        </div>
+        <div class="detail_block_seven" id="detail_block_seven">
+          <div class="detail_block_seven_title">
+            <h3>Đánh giá của khách</h3>
+            <a href="#detail_block_five">Xem phòng trống</a>
+          </div>
+          <div class="detail_block_seven_point">
+            <h5>Điểm đánh giá</h5>
+            <div>
+              <p><span>6,0</span>Xuất sắc</p>
+              <p>8 đánh giá</p>
+            </div>
+          </div>
+          <div class="detail_block_seven_detail">
+            <section>
+              <p>Nhân viên phục vụ (4 điểm)</p>
+              <input type="range" min="0" max="10" value="4" disabled />
+            </section>
+            <section>
+              <p>Tiện nghi (4 điểm)</p>
+              <input type="range" min="0" max="10" value="4" disabled />
+            </section>
+            <section>
+              <p>Sạch sẽ (4 điểm)</p>
+              <input type="range" min="0" max="10" value="4" disabled />
+            </section>
+            <section>
+              <p>Thoải mái (4 điểm)</p>
+              <input type="range" min="0" max="10" value="4" disabled />
+            </section>
+            <section>
+              <p>Đáng giá tiền (4 điểm)</p>
+              <input type="range" min="0" max="10" value="4" disabled />
+            </section>
+            <section>
+              <p>Địa điểm (4 điểm)</p>
+              <input type="range" min="0" max="10" value="4" disabled />
+            </section>
+          </div>
+          <div class="detail_block_seven_comment">
+            <button onclick="commentBlock()">Đọc tất cả đánh giá</button>
+            <div class="detail_block_seven_comment_hiden">
+              <div class="detail_block_seven_comment_hiden_top">
+                <h3>
+                  Đánh giá của khách về Khách sạn Song Anh
+                  <button>Viet đánh giá</button>
+                </h3>
+                <section>
+                  <p>Sắp xếp đánh giá theo:</p>
+                  <select name="" id="">
+                    <option value="">Mới nhất</option>
+                    <option value="">Cũ nhất</option>
+                  </select>
+                </section>
+              </div>
+              <div class="detail_block_seven_comment_hiden_bot">
+                <div class="detail_block_seven_comment_hiden_bot_detail">
+                  <section class="detail_block_seven_comment_hiden_bot_user">
+                    <div>
+                      <img src="../images/avatar.png" alt="" />
+                      <h4>Quang</h4>
+                    </div>
+                    <section>
+                      <p>Phòng 2 Giường Đôi</p>
+                      <p>Khách lẻ</p>
+                    </section>
+                  </section>
+                  <section class="detail_block_seven_comment_hiden_bot_comment">
+                    <div>
+                      <p>Ngày đánh giá: ngày 20 tháng 7 năm 2024</p>
+                      <p><span>6.0</span>Xuất sắc</p>
+                    </div>
+                    <p class="detail_block_seven_comment_hiden_bot_comment_p">
+                      Tv không hoạt động, ổ cắm điện chính không hoạt động. Nước
+                      nóng yếuTv không hoạt động, ổ cắm điện chính không hoạt
+                      động. Nước nóng yếuTv không hoạt động, ổ cắm điện chính
+                      không hoạt động. Nước nóng yếuTv không hoạt động, ổ cắm
+                      điện chính không hoạt động. Nước nóng yếu Tv không hoạt
+                      động, ổ cắm điện chính không hoạt động. Nước nóng yếuTv
+                      không hoạt động, ổ cắm điện chính không hoạt động. Nước
+                      nóng yếuTv không hoạt động, ổ cắm điện chính không hoạt
+                      động. Nước nóng yếuTv không hoạt động, ổ cắm điện chính
+                      không hoạt động. Nước nóng yếu Tv không hoạt động, ổ cắm
+                      điện chính không hoạt động. Nước nóng yếuTv không hoạt
+                      động, ổ cắm điện chính không hoạt động. Nước nóng yếuTv
+                      không hoạt động, ổ cắm điện chính không hoạt động. Nước
+                      nóng yếuTv không hoạt động, ổ cắm điện chính không hoạt
+                      động. Nước nóng yếu
+                    </p>
+                  </section>
+                </div>
+                <div class="detail_block_seven_comment_hiden_bot_detail">
+                  <section class="detail_block_seven_comment_hiden_bot_user">
+                    <div>
+                      <img src="../images/avatar.png" alt="" />
+                      <h4>Quang</h4>
+                    </div>
+                    <section>
+                      <p>Phòng 2 Giường Đôi</p>
+                      <p>Khách lẻ</p>
+                    </section>
+                  </section>
+                  <section class="detail_block_seven_comment_hiden_bot_comment">
+                    <div>
+                      <p>Ngày đánh giá: ngày 20 tháng 7 năm 2024</p>
+                      <p><span>6.0</span>Xuất sắc</p>
+                    </div>
+                    <p class="detail_block_seven_comment_hiden_bot_comment_p">
+                      Tv không hoạt động, ổ cắm điện chính không hoạt động.
+                    </p>
+                  </section>
+                </div>
+                <div class="detail_block_seven_comment_hiden_bot_detail">
+                  <section class="detail_block_seven_comment_hiden_bot_user">
+                    <div>
+                      <img src="../images/avatar.png" alt="" />
+                      <h4>Quang</h4>
+                    </div>
+                    <section>
+                      <p>Phòng 2 Giường Đôi</p>
+                      <p>Khách lẻ</p>
+                    </section>
+                  </section>
+                  <section class="detail_block_seven_comment_hiden_bot_comment">
+                    <div>
+                      <p>Ngày đánh giá: ngày 20 tháng 7 năm 2024</p>
+                      <p><span>6.0</span>Xuất sắc</p>
+                    </div>
+                    <p class="detail_block_seven_comment_hiden_bot_comment_p">
+                      Tv không hoạt động, ổ cắm điện chính không hoạt động. Nước
+                      nóng yếuTv không hoạt động, ổ cắm điện chính không hoạt
+                      động. Nước nóng yếuTv không hoạt động, ổ cắm điện chính
+                      không hoạt động. Nước nóng yếuTv không hoạt động, ổ cắm
+                      điện chính không hoạt động. Nước nóng yếu Tv không hoạt
+                      động, ổ cắm điện chính không hoạt động. Nước nóng yếuTv
+                      không hoạt động, ổ cắm điện chính không hoạt động. Nước
+                      nóng yếuTv không hoạt động, ổ cắm điện chính không hoạt
+                      động. Nước nóng yếuTv không hoạt động, ổ cắm điện chính
+                      không hoạt động. Nước nóng yếu Tv không hoạt động, ổ cắm
+                      điện chính không hoạt động. Nước nóng yếuTv không hoạt
+                      động, ổ cắm điện chính không hoạt động. Nước nóng yếuTv
+                      không hoạt động, ổ cắm điện chính không hoạt động. Nước
+                      nóng yếuTv không hoạt động, ổ cắm điện chính không hoạt
+                      động. Nước nóng yếu
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail_block_eight">
+          <div class="detail_block_eight_tittle">
+            <div>
+              <h3>Quy tắc chung</h3>
+              <p>
+                Khách sạn Song Anh nhận yêu cầu đặc biệt - gửi yêu cầu trong
+                bước kế tiếp!
+              </p>
+            </div>
+            <a href="#detail_block_five">Xem phòng trống</a>
+          </div>
+          <div class="detail_block_eight_content">
+            <section>
+              <h3>Nhận phòng</h3>
+              <div><p>Từ 11:30 - 12:00</p></div>
+            </section>
+            <section>
+              <h3>Trả phòng</h3>
+              <div><p>Từ 11:30 - 12:00</p></div>
+            </section>
+            <section>
+              <h3>Trẻ em và giường</h3>
+              <div>
+                <h5>Chính sách trẻ em</h5>
+                <p>Phù hợp cho tất cả trẻ em.</p>
+                <p>
+                  Để xem thông tin giá và tình trạng phòng trống chính xác, vui
+                  lòng thêm số lượng và độ tuổi của trẻ em trong nhóm của bạn
+                  khi tìm kiếm.
+                </p>
+              </div>
+            </section>
+            <section>
+              <h3>Giới hạn độ tuổi</h3>
+              <div>
+                <p>Độ tuổi tối thiểu để nhận phòng là 18</p>
+              </div>
+            </section>
+            <section>
+              <h3>Vật nuôi</h3>
+              <div>
+                <p>Vật nuôi không được phép.</p>
+              </div>
+            </section>
+            <section>
+              <h3>Chỉ thanh toán bằng tiền mặt</h3>
+              <div>
+                <p>Chỗ nghỉ này chỉ chấp nhận thanh toán bằng tiền mặt.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_above">
+        <img src="../images/logo.jfif" alt="" />
+        <div>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="footer_under">
+        <div>
+          <p>Công ty</p>
+          <p>Cơ hội việc làm</p>
+          <p>Báo chí</p>
+          <p>Ứng dụng di động - tìm kiếm mọi lúc, mọi nơi</p>
+        </div>
+        <div>
+          <p>Hỗ trợ</p>
+          <p>Cách trivago hoạt động</p>
+          <p>Điều khoản sử dụng</p>
+          <p>Thông tin Pháp lý</p>
+          <p>Tùy chọn cookie</p>
+          <p>Thông báo bảo mật</p>
+        </div>
+        <div>
+          <h3>
+            Tìm nguồn cảm hứng đặc biệt cho kỳ nghỉ tiếp theo của bạn - đăng ký
+            nhận bản tin của chúng tôi.
+          </h3>
+          <form action="">
+            <input type="text" placeholder="Địa chỉ email" />
+            <button type="button">Dang ky</button>
+          </form>
+          <p class="footer_under_text">
+            trivago N.V., Kesselstraße 5 – 7, 40221 Düsseldorf, CHLB Đức
+            Copyright 2024 trivago | Bảo lưu toàn quyền.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

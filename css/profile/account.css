@@ -1,0 +1,32 @@
+.account {
+    width: 70%;
+    font-size: var(--font-size-12);
+}
+.account h2{
+  margin-bottom: var(--abs-12);
+  font-size: var(--font-size-20);
+}
+.account p{
+    margin: var(--abs-12) 0;
+}
+.account_form{
+    width: 100%;
+}
+.account_form div{
+    width: 100%;
+    margin: var(--abs-4) 0;
+}
+.account_form div label{
+    font-weight: 500;
+}
+.account_form div input{
+    width: 100%;
+    height: var(--abs-24);
+    padding-left: var(--abs-4);
+    border:1px solid var(--grey-400);
+    border-radius: var(--abs-4);
+}
+.account_form button{
+    margin-top: var(--abs-8);
+    padding: var(--abs-8);
+}

@@ -1,0 +1,40 @@
+@media (min-width: 2200px) {
+  body {
+    width: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  body {
+    width: 80%;
+  }
+}
+@media (min-width: 1630px) {
+  body {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1440px) {
+  header,
+  main ,footer {
+    padding: 0 var(--abs-128);
+  }
+}
+@media (min-width: 1339px) {
+    header,
+    main ,footer {
+      padding: 0 var(--abs-56);
+    }
+  }
+  @media (max-width: 1020px) {
+    body{
+      font-size: var(--font-size-8);
+    }
+    footer{
+      padding: 20px;
+      font-size: var(--font-size-10);
+    }
+    .footer_under{
+      display: grid;
+    }
+  }

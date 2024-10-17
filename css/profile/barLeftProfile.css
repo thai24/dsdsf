@@ -1,0 +1,36 @@
+.profile {
+  margin-top: var(--abs-8);
+  display: flex;
+  gap: var(--abs-12);
+}
+.barLeftProfile {
+  width: 20%;
+}
+.barLeftProfile div,section{
+  margin-bottom: var(--abs-12);
+}
+.barLeftProfile div {
+  padding: var(--abs-8) var(--abs-4);
+}
+.barLeftProfile div a {
+  color: var(--grey-500);
+}
+.barLeftProfile div:hover {
+  color: var(--grey-800);
+  border-radius: var(--abs-4);
+  background-color: var(--grey-300);
+}
+.barLeftProfile div a span {
+  color: var(--blue-700);
+}
+
+.barLeftProfile section {
+  padding: var(--abs-4);
+}
+.barLeftProfile section a:hover {
+  text-decoration: underline;
+}
+
+
+
+
